@@ -1,0 +1,55 @@
+{
+  "searchOptions": {
+    "searchByDirector": true,
+    "searchByTitle": true,
+    "searchByListedIn": true,
+    "searchByDuration": true,
+    "searchByType": true
+  },
+  "searchResults": [
+    {
+      "category": "Director",
+      "TVShows": [],
+      "Movies": []
+    },
+    {
+      "category": "Title",
+      "type": "TvShows/Movies",
+      "director": "",
+      "casts": [],
+      "country": "",
+      "listedIn": [],
+      "duration": "",
+      "description": ""
+    },
+    {
+      "category": "ListedIn",
+      "options": [
+        {
+          "category": "Thrillers",
+          "TVShows": [
+            {
+              "titles": "",
+              "director": "",
+              "duration": "",
+              "cast": ""
+            }
+          ],
+          "Movies": [
+            {
+              "titles": "",
+              "director": "",
+              "duration": "",
+              "cast": ""
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "category": "Type",
+      "TVShows": [{}],
+      "Movies": [{}]
+    }
+  ]
+}
