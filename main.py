@@ -1,9 +1,7 @@
 from fastapi import FastAPI
-from app.api.endpoints import data
 from app.api.endpoints.archive import NetflixFileAccessPoint
 app = FastAPI()
 
-app.include_router(data.router)
 app.include_router(NetflixFileAccessPoint.router)
 @app.get("/")
 def read_root():
