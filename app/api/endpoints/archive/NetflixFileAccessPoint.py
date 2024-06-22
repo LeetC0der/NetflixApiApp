@@ -10,8 +10,7 @@ def read_netflix_titles():
         file_path = os.path.join(os.path.dirname(__file__), 'netflix_titles.csv')
         # Read the CSV file with a specified encoding
         df = pd.read_csv(file_path, encoding='latin1')  # or encoding='cp1252' if 'latin1' doesn't work
-        
-        return df.head().to_json()
+        return df['director'].to_json()
 
     except FileNotFoundError:
         print(f"File not found: {file_path}")
@@ -23,7 +22,7 @@ def read_netflix_titles():
         print(f"An error occurred: {e}")
 
 # Example usage
-if __name__ == "__main__":
-    df = read_netflix_titles()
-    if df is not None:
-        print(df.head())
+# if __name__ == "__main__":
+#     df = read_netflix_titles()
+#     if df is not None:
+#         print(df.head())
